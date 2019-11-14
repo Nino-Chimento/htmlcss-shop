@@ -6,26 +6,38 @@
 body {
   padding: 10px;;
 }
-
+li {
+  display: inline-block;
+}
 .container {padding: 10px;
   width: 75%;
   margin: auto;
+  background-image: url();
 }
+
+
 
 
 .box {
   display: inline-block;
   position: relative;
+  width: 33%;
 }
+img {
+  height: auto;
+  width: auto;
+}
+
+
 .box:hover {
   cursor: pointer;
-  z-index: auto;
 }
+
 
 .discount {
   position: absolute;
   top:0;
-  right: 0;
+  left: 270%;
   background-color: red;
   border-radius: 4px;
 }
@@ -38,8 +50,8 @@ body {
   font-size: 30px;
   color: red;
   display: inline-block;
-  width: 100%;
-  text-align: center;
+  width: 300%;
+  text-align:center;
   bottom: 0%;
   display: none;
 }

@@ -3,18 +3,20 @@
   padding: 0;
   margin: 0;
 }
-.container {
-  background-color: red;
+.container {padding: 10px;
   width: 1200px;
   height: 1200px;
 }
+
 .box {
   display: inline-block;
   position: relative;
 }
-.box :hover {
-  
+.box:hover {
+  cursor: pointer;
+  z-index: auto;
 }
+
 .discount {
   position: absolute;
   top:0;
@@ -22,12 +24,19 @@
   background-color: red;
   border-radius: 4px;
 }
+
+.box:nth-child(even) .discount {
+  background-color: green;
+}
 .heart {
+  position: absolute;
   font-size: 30px;
   color: red;
   display: inline-block;
-  position: absolute;
   left:50%;
   bottom: 0%;
-  z-index: -1;
+  display: none;
+}
+.box:hover .heart {
+  display: block;
 }
